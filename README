@@ -1,0 +1,36 @@
+Hickory Hills TeeTime App.
+
+Web based application for the course and client users to book tee times.
+
+DESIGN TO DO
+-CENTER BUTTONS
+
+Function.
+
+-On open show todays date
+-On open show the next 3 available times for today, tomorrow and 2 days out.
+-Gernerate pricing based on variables
+-User search MONTH then DAY then TIME by half hour intervals.
+-Once search complete show only available times in 15 min intervals if avaiable.
+-After serch complete show times available for user search TIME for today, tomorrow and 2 days out.
+-User can BOOK with button
+
+
+BOOK
+-Once clicked sends to form for user info. NAME, EMAIL, NUMBER OF PLAYERS (1-4)
+-Once form filled out calculate cost based on numbr of players.
+-Send total cost to and USER to payment source. (PayPal?)
+
+
+DATABASE
+-captures user information NAME, EMAIL, stores in new page table for course to access.
+-Captures and stores booked times to unavailable.
+-Stores open times
+-ALL TIMES in 15 min intervals
+
+
+COURSE USER
+-Create login page for COURSE
+-Course can book tee times using app with out sending to payment provider, can add name with out EMAIL being needed.
+-Course can print Daily TEE TIMES BOOKED and can edit todays booked
+
