@@ -24,3 +24,13 @@ button {
 	
 	margin: 0px auto;
 }
+
+body {
+	background: url(images/blades_of_grass_seamless_pattern.jpg);
+}
+
+.calendar {
+	margin: 0px auto;
+	width: 30%;
+	text-align: center;
+}
