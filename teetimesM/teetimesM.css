@@ -1,9 +1,16 @@
 /* CSS declarations go here */
+.padding {
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
 
 .available {
 	background: url(images/teetimebg.jpg);
 	background-repeat: no-repeat;	
-	
+	min-width: 150px;
+
+
 }
 
 .open {
@@ -16,21 +23,25 @@
 }
 
 .bookButton {
-	width: 100px;
+	width: 120px;
 	margin: 0px auto;
+	padding-top: 15px;
+
 }
 
-button {
-	
-	margin: 0px auto;
-}
 
 body {
 	background: url(images/blades_of_grass_seamless_pattern.jpg);
 }
 
-.calendar {
-	margin: 0px auto;
-	width: 30%;
+
+.timepicker {
+	max-width: 300px;
+	margin: 0 auto;
 	text-align: center;
+}
+
+.btndiv {
+	text-align: center;
+	padding-bottom: 5px;
 }

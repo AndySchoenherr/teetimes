@@ -5,6 +5,11 @@
 # but you can also edit it by hand.
 
 meteor-platform
+jquery
+twbs:bootstrap
 autopublish
 insecure
 tsega:bootstrap3-datetimepicker
+richsilv:pikaday
+
+momentjs:moment

@@ -1,11 +1,7 @@
 <head>
   <title>Hickory Hills Golf Club</title>
-  <link  rel="stylesheet" type='text/css' href="teetimesM.css">
-  <link  rel="stylesheet" type='text/css' href="bootstrap-3.3.4-dist/css/bootstrap.min.css">
-
  
- 
-</head>
+ </head>
 
 
   
@@ -15,147 +11,207 @@
 	 	<div class="conatainer ">
 	 		<div class="row">
 	 			<div class="col-sm-12">
-	 	
-	 				<h2 class="text">Book your Tee Time Online</h2>
+	 				
+	 				<h2 class="text">
+	 					Book your Tee Time Online
+	 				</h2>
 	 			</div>
-	
- 		</div>
-
-	<div class="container">
-    <div class="row">
-        <div class='col-sm-12 calendar'>
-            <div class="form-group">
-                <div class='input-group date calendar' id='datetimepicker1'>
-                    <input type='text' class="form-control" />
-                    <span class="input-group-addon">
-                        <span class="glyphicon glyphicon-calendar"></span>
-                    </span>
-                </div>
-            </div>
-        </div>
-        <script type="text/javascript">
-            $(function () {
-                $('#datetimepicker1').datetimepicker();
-            });
-        </script>
-    </div>
+	 		</div>
+	 	
+	<div class="row">
+		<div class="col-sm-12 timepicker">
+			<div class="centerbutton">
+	{{> teetimepicker }}
 </div>
+		</div>
+	</div>
+	</div>
+
+
 	 		
 		
 
 		<div class="container">
+
 	 		<div class="row">
-	 			<div class="col-sm-12">
-	 				
+	 			<div class="col-sm-1"></div>
+	 			<div class="col-sm-2">
+
+	 			{{> Available }}
+
 	 			</div>
+
+	 			
+
+	 			<div class="col-sm-2">
+
+	 			{{> Available }}
+
+	 			</div>
+
+	 			
+
+	 			<div class="col-sm-2"> 
+	 			{{> Available }}
+	 			</div>
+
+	 			
+
+	 			<div class="col-sm-2"> 
+	 			{{> Available }}
+	 			</div>
+
+	 			<div class="col-sm-2"> 
+	 			{{> Available }}
+	 			</div>
+
+	 			<div class="col-sm-1"></div>
 	 		</div>
 
-	 		<div class="row">
-	 			<div class="col-sm-2"></div>
+	 		<div class="row padding">
+	 			<div class="col-sm-1"></div>
+	 			<div class="col-sm-2">
 
-	 			<div class="col-sm-2 available open" id="today">
-	 				<h2 class="text">Today</h2>
-	 				<p class="text" id="time">Time</p><br><br>
-	 				<p class="text" id="price">Price per player</p><br><br>
-	 				<button type="button" class="btn btn-success bookButton">Book Now</button>
+	 			{{> Available }}
+
+	 			</div>
+
+	 			
+
+	 			<div class="col-sm-2">
+
+	 			{{> Available }}
+
+	 			</div>
+
+	 			
+
+	 			<div class="col-sm-2"> 
+	 			{{> Available }}
+	 			</div>
+
+	 			
+
+	 			<div class="col-sm-2"> 
+	 			{{> Available }}
+	 			</div>
+
+	 			<div class="col-sm-2"> 
+	 			{{> Available }}
 	 			</div>
 
 	 			<div class="col-sm-1"></div>
+	 		</div>
 
-	 			<div class="col-sm-2 available open" id="tomorrow">
-	 				<h2 class="text">Tomorrow</h2>
-	 				<p class="text" id="time">Time</p><br><br>
-	 				<p class="text" id="price">Price per player</p><br><br>
-	 				<button type="button" class="btn btn-success bookButton">Book Now</button> 				
+	 		<div class="row padding">
+	 			<div class="col-sm-1"></div>
+	 			<div class="col-sm-2">
+
+	 			{{> Available }}
+
+	 			</div>
+
+	 			
+
+	 			<div class="col-sm-2">
+
+	 			{{> Available }}
+
+	 			</div>
+
+	 			
+
+	 			<div class="col-sm-2"> 
+	 			{{> Available }}
+	 			</div>
+
+	 			
+
+	 			<div class="col-sm-2"> 
+	 			{{> Available }}
+	 			</div>
+
+	 			<div class="col-sm-2"> 
+	 			{{> Available }}
 	 			</div>
 
 	 			<div class="col-sm-1"></div>
+	 		</div>
 
-	 			<div class="col-sm-2 available open" id="twodays">
-	 				<h2 class="text">2 Days</h2>
-	 				<p class="text" id="time">Time</p><br><br>
-	 				<p class="text" id="price">Price per player</p><br><br>
-	 				<button type="button" class="btn btn-success bookButton">Book Now</button>
+	 		<div class="row padding">
+	 			<div class="col-sm-1"></div>
+	 			<div class="col-sm-2">
+
+	 			{{> Available }}
+
 	 			</div>
 
-	 			<div class="col-sm-2"></div>
-	 		</div><br><br>
+	 			
 
-	 		<div class="row">
-	 			<div class="col-sm-2"></div>
+	 			<div class="col-sm-2">
 
-	 			<div class="col-sm-2 available open" id="today">
-	 				
-	 				<p class="text" id="time">Time</p><br><br>
-	 				<p class="text" id="price">Price per player</p><br><br>
-	 				<button type="button" class="btn btn-success bookButton">Book Now</button>
+	 			{{> Available }}
+
+	 			</div>
+
+	 			
+
+	 			<div class="col-sm-2"> 
+	 			{{> Available }}
+	 			</div>
+
+	 			
+
+	 			<div class="col-sm-2"> 
+	 			{{> Available }}
+	 			</div>
+
+	 			<div class="col-sm-2"> 
+	 			{{> Available }}
 	 			</div>
 
 	 			<div class="col-sm-1"></div>
-
-	 			<div class="col-sm-2 available open" id="tomorrow">
-	 				
-	 				<p class="text" id="time">Time</p><br><br>
-	 				<p class="text" id="price">Price per player</p><br><br>
-	 				<button type="button" class="btn btn-success bookButton">Book Now</button> 				
-	 			</div>
-
-	 			<div class="col-sm-1"></div>
-
-	 			<div class="col-sm-2 available open" id="twodays">
-	 				
-	 				<p class="text" id="time">Time</p><br><br>
-	 				<p class="text" id="price">Price per player</p><br><br>
-	 				<button type="button" class="btn btn-success bookButton">Book Now</button>
-	 			</div>
-
-	 			<div class="col-sm-2"></div>
-	 		</div><br><br>
-
-	 		<div class="row">
-	 			<div class="col-sm-2"></div>
-
-	 			<div class="col-sm-2 available open" id="today">
-	 				
-	 				<p class="text" id="time">Time</p><br><br>
-	 				<p class="text" id="price">Price per player</p><br><br>
-	 				<button type="button" class="btn btn-success bookButton">Book Now</button>
-	 			</div>
-
-	 			<div class="col-sm-1"></div>
-
-	 			<div class="col-sm-2 available open" id="tomorrow">
-	 				
-	 				<p class="text" id="time">Time</p><br><br>
-	 				<p class="text" id="price">Price per player</p><br><br>
-	 				<button type="button" class="btn btn-success bookButton">Book Now</button> 				
-	 			</div>
-
-	 			<div class="col-sm-1"></div>
-
-	 			<div class="col-sm-2 available open" id="twodays">
-	 				
-	 				<p class="text" id="time">Time</p><br><br>
-	 				<p class= "text" id="price">Price per player</p><br><br>
-	 				<button type="button" class="btn btn-success bookButton">Book Now</button>
-	 			</div>
-
-	 			<div class="col-sm-2"></div>
 	 		</div>
 	 	</div>
-	 </div>
+
+	 			
 
 
   
   
-  <script src="http://code.jquery.com/jquery.js"></script>
-  <script type="text/javascript" src="teetimesM.js"></script>
-  <script type="text/javascript" src="bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
-
+  
+  
 
 </body>
 
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
+<template name="teetimepicker">
+
+  <div class="input-group datetimepicker">
+    <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+    <input class="set-due-date form-control" type="text"/>
+  </div>
+
 </template>
+
+<template name="Available">
+	
+	<div class="col-sm-2 available open" id="opentime">
+	 				<h2 class="time">	 							 							{{#each newtime}}
+	 									<p>{{Time}}</p>
+	 								 {{/each}}
+
+	 			</h2>
+	 				<p class="text">Play 18 - $25.00</p><br>
+	 				<p class="text">Play 9 - $17.00</p><br>
+	 				<div class="btndiv">
+	 				<button type="button" id="18holes" class="btn btn-success bookButton">Book 18 Holes</button>
+	 			</div>
+	 				<div class="btndiv">
+	 				<button type="button" id="9holes" class="btn btn-success bookButton">Book 9 Holes</button>
+	 			</div>
+	 			</div>
+	 		
+</template>
+
+
+

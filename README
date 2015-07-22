@@ -8,12 +8,12 @@ DESIGN TO DO
 Function.
 
 -On open show todays date
--On open show the next 3 available times for today, tomorrow and 2 days out.
--Gernerate pricing based on variables
--User search MONTH then DAY then TIME by half hour intervals.
--Once search complete show only available times in 15 min intervals if avaiable.
--After serch complete show times available for user search TIME for today, tomorrow and 2 days out.
--User can BOOK with button
+-On open show available times for today.
+
+-User search date with caledar.
+-Once search complete show only available times for selected day.
+-
+-User can BOOK with button one for 9 holes storing price for 9 and one for 18 holes storing price for 18 holes.
 
 
 BOOK
@@ -26,7 +26,7 @@ DATABASE
 -captures user information NAME, EMAIL, stores in new page table for course to access.
 -Captures and stores booked times to unavailable.
 -Stores open times
--ALL TIMES in 15 min intervals
+
 
 
 COURSE USER
