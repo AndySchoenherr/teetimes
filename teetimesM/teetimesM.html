@@ -3,8 +3,10 @@
  
  </head>
 
+<header>
+  {{> header}}
 
-  
+ </header>
 
 
 	 <body>
@@ -34,150 +36,19 @@
 		<div class="container">
 
 	 		<div class="row">
-	 			<div class="col-sm-1"></div>
-	 			<div class="col-sm-2">
+	 			
 
-	 			{{> Available }}
-
-	 			</div>
+	 			{{> available }}
 
 	 			
 
-	 			<div class="col-sm-2">
-
-	 			{{> Available }}
-
-	 			</div>
-
-	 			
-
-	 			<div class="col-sm-2"> 
-	 			{{> Available }}
-	 			</div>
-
-	 			
-
-	 			<div class="col-sm-2"> 
-	 			{{> Available }}
-	 			</div>
-
-	 			<div class="col-sm-2"> 
-	 			{{> Available }}
-	 			</div>
-
-	 			<div class="col-sm-1"></div>
-	 		</div>
-
-	 		<div class="row padding">
-	 			<div class="col-sm-1"></div>
-	 			<div class="col-sm-2">
-
-	 			{{> Available }}
-
-	 			</div>
-
-	 			
-
-	 			<div class="col-sm-2">
-
-	 			{{> Available }}
-
-	 			</div>
-
-	 			
-
-	 			<div class="col-sm-2"> 
-	 			{{> Available }}
-	 			</div>
-
-	 			
-
-	 			<div class="col-sm-2"> 
-	 			{{> Available }}
-	 			</div>
-
-	 			<div class="col-sm-2"> 
-	 			{{> Available }}
-	 			</div>
-
-	 			<div class="col-sm-1"></div>
-	 		</div>
-
-	 		<div class="row padding">
-	 			<div class="col-sm-1"></div>
-	 			<div class="col-sm-2">
-
-	 			{{> Available }}
-
-	 			</div>
-
-	 			
-
-	 			<div class="col-sm-2">
-
-	 			{{> Available }}
-
-	 			</div>
-
-	 			
-
-	 			<div class="col-sm-2"> 
-	 			{{> Available }}
-	 			</div>
-
-	 			
-
-	 			<div class="col-sm-2"> 
-	 			{{> Available }}
-	 			</div>
-
-	 			<div class="col-sm-2"> 
-	 			{{> Available }}
-	 			</div>
-
-	 			<div class="col-sm-1"></div>
-	 		</div>
-
-	 		<div class="row padding">
-	 			<div class="col-sm-1"></div>
-	 			<div class="col-sm-2">
-
-	 			{{> Available }}
-
-	 			</div>
-
-	 			
-
-	 			<div class="col-sm-2">
-
-	 			{{> Available }}
-
-	 			</div>
-
-	 			
-
-	 			<div class="col-sm-2"> 
-	 			{{> Available }}
-	 			</div>
-
-	 			
-
-	 			<div class="col-sm-2"> 
-	 			{{> Available }}
-	 			</div>
-
-	 			<div class="col-sm-2"> 
-	 			{{> Available }}
-	 			</div>
-
-	 			<div class="col-sm-1"></div>
 	 		</div>
 	 	</div>
 
 	 			
 
 
-  
+ 
   
   
   
@@ -193,25 +64,105 @@
 
 </template>
 
-<template name="Available">
-	
-	<div class="col-sm-2 available open" id="opentime">
-	 				<h2 class="time">	 							 							{{#each newtime}}
-	 									<p>{{Time}}</p>
-	 								 {{/each}}
+<template name="available">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-1"></div>
+    {{#each times}}
+    
+    
+    	
+	 <div class="col-sm-2 available open" id="opentime">
+  <h2 class="time">                                                            
 
-	 			</h2>
-	 				<p class="text">Play 18 - $25.00</p><br>
-	 				<p class="text">Play 9 - $17.00</p><br>
-	 				<div class="btndiv">
-	 				<button type="button" id="18holes" class="btn btn-success bookButton">Book 18 Holes</button>
-	 			</div>
-	 				<div class="btndiv">
-	 				<button type="button" id="9holes" class="btn btn-success bookButton">Book 9 Holes</button>
-	 			</div>
-	 			</div>
+    <p>{{Time}}</p>
+    
+  </h2>
+  <p class="text"></p><br>
+  <p class="text"></p><br>
+  <div class="btndiv">
+                    <button type="button" id="18holes" class="btn btn-success bookButton">Book 18 Holes</button>
+                </div>
+                <div class="btndiv">
+                    <button type="button" id="9holes" class="btn btn-success bookButton">Book 9 Holes</button>
+                </div>
+</div>
+			
+
+
+{{/each}}
+<div class="col-sm-1"></div>
+</div>
+</div>
 	 		
 </template>
 
 
+<template name="header">
 
+
+		<a href="index.html">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 header">
+                	<div class="col-xs-2">
+                    	<img src="../images/golfer.png" alt="silhouette" class="golfer">
+                        </div>
+					
+						<div class="col-xs-8">
+							<h1 class="headerText top">Hickory Hills Golf Club</h1>
+							<h2 class="headerText">Brownstown Indiana</h2>
+						</div>
+					
+						<div class="col-xs-2">
+							<img src="../images/hh-logo.jpg" alt="Hickory Hills Golf Club Logo" class="logo">
+						</div>
+					
+					
+				</div>
+			</div>
+		
+		</a>
+
+
+	<div class="row">
+		<div class="navbar navbar-default ">
+			<div class="container">	
+
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+				<a class="navbar-brand" href="index.html">Hickory Hills Golf Club</a>
+					<div class="collapse navbar-collapse Mbar">
+						<ul class="nav navbar-nav navbar-right">
+							<li ><a href="index.html">Home</a></li>
+							<li class="dropdown">
+								<a data-toggle="dropdown" data-target="#">The Course<b class="caret"></b>
+								</a>
+									<ul class="dropdown-menu">
+										<li><a href="Rates.html">Rates</a></li>
+										<li><a href="TeeTimes.html">Tee Times</a></li>
+										<li><a href="holes.html">Course Description</a></li>
+										<li><a href="Proshop.html">Proshop</a></li>
+										<li><a href="Memberships.html">Memberships</a></li>
+									</ul>
+									
+							<li ><a href="Events.html">Events</a></li>				
+							<li ><a href="Instruction.html">Instruction</a></li>
+							<li ><a href="Contact.html">Contact Us</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+</template>

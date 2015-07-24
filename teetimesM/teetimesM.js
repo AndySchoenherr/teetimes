@@ -7,6 +7,38 @@ var Times = ["8:00am", "8:30am", "9:00am", "9:30am", "10:30am", "11:00am", "11:3
  
 TeeTimes = new Mongo.Collection('times');
 
+
+Price = new Mongo.Collection('price');
+
+
+	
+	
+
+
+
+if (Meteor.isClient) {
+  Template.teetimepicker.onRendered(function() {
+    this.$('.datetimepicker').datetimepicker();
+});
+
+  Template.available.helpers({
+  		'times': function(){
+  			return TeeTimes.find({});
+  		}
+
+  });
+  
+
+
+}
+
+
+
+if (Meteor.isServer) {
+  Meteor.startup(function () {
+    // code to run on server at startup
+
+    if(TeeTimes.find().count() === 0) {
 TeeTimes.insert({Time: "8:00am"});
 TeeTimes.insert({Time: "8:30am"});
 TeeTimes.insert({Time: "9:00am"});
@@ -27,36 +59,9 @@ TeeTimes.insert({Time: "4:00pm"});
 TeeTimes.insert({Time: "4:30pm"});
 TeeTimes.insert({Time: "5:00pm"});
 TeeTimes.insert({Time: "5:30pm"});
-
-Price = new Mongo.Collection('price');
+}
+});
 
 Price.insert({holes9: "17.00"});
 Price.insert({holes18: "$25.00"});
-	
-	
-
-
-
-if (Meteor.isClient) {
-  Template.teetimepicker.onRendered(function() {
-    this.$('.datetimepicker').datetimepicker();
-});
-
-  Template.Available.helpers({
-  		'time': function(){
-  			return TeeTimes.find()
-  		}
-
-  });
-  
-
-
-}
-
-
-
-if (Meteor.isServer) {
-  Meteor.startup(function () {
-    // code to run on server at startup
-  });
 }
