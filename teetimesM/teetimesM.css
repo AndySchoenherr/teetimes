@@ -45,3 +45,350 @@ body {
 	text-align: center;
 	padding-bottom: 5px;
 }
+
+/*******************
+SITE STYLES 
+********************/
+
+
+
+
+img {
+	max-width: 100%;
+}
+
+.header {
+	background: #22852f url('../images/background-img.jpg');
+	background-size: cover;
+	height: 200px;
+}
+
+.headerText {
+	text-align: center;
+	color: #fff;
+	text-shadow: 2px 2px #000;
+	
+
+}
+
+.top {
+	padding-top: 5%;
+}
+
+.logo {
+	padding-top: 10%;
+	float: right;
+
+}
+
+.golfer {
+	max-height: 200px;
+	}
+
+
+.picnav {
+	padding-bottom:15px;
+
+	
+}
+
+.course_head {
+	text-align: center;
+}
+
+.course_long {
+	padding-bottom:25px;
+}
+
+body {
+	background-color: #F3F2B8;
+}
+
+.holebox {
+	padding-bottom: 35px;
+}
+
+.footer {
+	text-align: center;
+	position: center;
+	padding-top: 15px;
+}
+
+.course_head {
+	font-family: 'Merriweather', sans-serif;
+	font-weight: 700;
+	text-align: center;
+	font-size: 2em;
+}
+	
+.course_long {
+	font-family: 'Merriweather', sans-serif;
+	font-weight: 400;
+}
+
+.holes {
+	font-family: 'Merriweather', sans-serif;
+	font-weight: 400;
+}
+
+.eventHead {
+	text-align: center;
+	font-family: 'Merriweather', sans-serif;
+	font-weight: 700;
+	color: black;
+	font-size: 2em;
+	
+}
+
+.weatherp {
+	margin: 0 auto;
+}
+
+/************************
+	CONTACT
+************************/
+
+.hcontact {
+	text-align: center;	
+	}
+	
+	
+.form1 {
+  float: left;
+  max-width: 50%;
+  margin-top: 40px;
+  margin-left: 15%;
+  margin-right: 40px;
+  padding: 40px 80px;
+  background: #CDC473;
+  border-radius: 8px;
+}	
+
+	
+.submitButton {
+  padding: 25px 39px 18px 39px;
+  color: #FFF;
+  background-color: #B4963A;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 50%;
+  border: 1px solid #A1873A;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  margin-bottom: 10px;
+  margin-left: 25%;
+}
+
+.lb {
+  display: block;
+  margin-bottom: 8px;
+}
+
+label.light {
+  font-weight: 300;
+  display: inline;
+}
+
+input[type="text"],
+input[type="email"],
+.ta,
+select {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 12px 40px;
+  width: 75%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+}
+
+.john {
+	margin: 40px 40px 15px 0;
+	border-radius: 15px;
+	max-width: 150px;
+	max-height: 150px;
+	}
+	
+.pga {
+	max-width: 100px;
+	max-height: 100px;
+	}
+	
+
+.contact_info {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	}
+
+/*************************
+Rates
+*************************/
+
+	
+#RegularRates {
+	background: #CDC473;
+	text-align: center; 
+	}
+	
+
+#HHrates {
+	font-family:'Merriweather', sans-serif;
+	font-weight: 700;
+	font-size: 2em;
+	}
+	
+#walking, #Carts, #twilight, #Senior  {
+	font-family: 'Merriweather', sans-serif;
+	font-weight: 700;
+	font-size: 1.5em;
+	}
+
+#walkingrates, #cartrates, #twilightrates, #SeniorRatesnine, #SeniorRateseightteen, #SeniorWeekend {
+	font-family: 'Merriweather', sans-serif;
+	font-weight: 400;
+	font-size: 1.2rem;
+	}
+	
+#kidrates, #cartrule {
+	font-family: 'Merriweather', sans-serif; 
+	color: #C11414
+	}
+	
+#gotopackages {
+	text-decoration: none;
+	color: #000;
+	font-family: 'Merriweather', sans-serif; 
+	font-size: 1.2em;
+	padding-bottom: 10px;
+	
+	}
+	
+	.packages:visited { /***** changing color of link so that it matches*****/
+		color: #000;
+	
+	}
+	
+	.packages:hover {
+		cursor: pointer; /***** makes hand pointer for clickable link*******/
+		color: #fff;
+		}
+
+#rate-logo {
+	width: 10%;
+	height: 10%;
+	padding-top: 5%;
+	}
+	
+.photolinks {
+	padding-top: 20px;
+}
+
+/*********************
+TEE TIMES
+**********************/
+
+.bookhead {
+	text-align: center;
+	font-family: 'Merriweather', sans-serif;
+	font-weight: 700;
+	font-size: 1.5em;
+}
+
+.teetext {
+	text-align: center;
+	font-family: 'Merriweather', sans-serif;
+	font-weight: 400;
+	margin: 0 auto;
+}
+
+.membertext {
+	text-align: center;
+	font-family: 'Merriweather', sans-serif;
+	font-weight: 400;
+	margin: 0 auto;
+}
+
+.memberhead {
+	text-align: center;
+	font-family: 'Merriweather', sans-serif;
+	font-weight: 700;
+	margin: 0 auto;
+	padding-top:10px;
+}
+
+.memberships {
+	background: #b69a4d;
+}
+
+.mbForm{
+	display: inline-block;
+	text-align: center;
+}
+
+.mbdd {
+	max-width: 200px;
+}
+
+.dropd {
+	margin-left:100px;
+}
+
+.memberform {
+	background-color: silver;
+}
+
+.memberlable {
+	width: 100px;
+	padding-left: 10px;
+
+}
+
+.membercheck {
+	margin-left: 100px;
+}
+
+.selecttext {
+	margin-left: 100px;
+	font-family: 'Merriweather', sans-serif;
+
+}
+
+.submittext {
+	text-align: center;
+	font-family: 'Merriweather', sans-serif;
+	margin: 15px;
+
+}
+
+.memberbutton {
+	margin: 0px auto;
+	width: 200px;
+	margin-left: 80px;
+
+}
+
+.jrcamp {
+	
+}
+
+.lessontext {
+	
+}
+
+.protext {
+	text-align: center;
+	font-family: 'Merriweather', sans-serif;
+	font-weight: 400;
+}
+
+.proshopP {
+	text-align: center;
+	font-family: 'Merriweather', sans-serif;
+}
